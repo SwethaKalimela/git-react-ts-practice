@@ -3,10 +3,7 @@ div {
     border:1px solid black;
     border-radius:16px;
     width: 150px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    outline-style: double;
+    outline-style: dashed;
     outline-color: blue;
     outline-width: thin;
     outline-offset: 2px;

@@ -5,8 +5,11 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
+      <div>
       <Button 
-        label="Today" />
+        label="Today"
+        />
+      </div>
     </React.Fragment>
   );
 }

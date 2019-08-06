@@ -1,12 +1,23 @@
 import React from 'react';
 import './Button.css'
 
-const button = (props) => {
-    return (
+class Button extends React.Component {
+    constructor(props) {
+        super(props);
+    }
+    componentDidMount() {
+        this.el.focus();
+    }
+    render() {
+      return (
         <React.Fragment>
-            <div>{props.label}</div>
+            <div 
+            ref={ (el) => {this.el = el}}
+            tabIndex='-1'
+            >{this.props.label}</div>
         </React.Fragment>
-    );
-}
+        );
+    }
+  }
 
-export default button;
+export default Button;
